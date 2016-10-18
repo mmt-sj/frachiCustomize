@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA041DB5FE6A00FC03F0 /* main.m */; };
+		08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */; };
+		08E0FA0B1DB5FE6A00FC03F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */; };
+		08E0FA0E1DB5FE6A00FC03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */; };
+		08E0FA111DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */; };
+		08E0FA131DB5FE6A00FC03F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */; };
+		08E0FA161DB5FE6A00FC03F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */; };
+		08E0FA211DB5FE6B00FC03F0 /* frachiCustomizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA201DB5FE6B00FC03F0 /* frachiCustomizeTests.m */; };
+		08E0FA2C1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E0FA1D1DB5FE6B00FC03F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E0F9F81DB5FE6900FC03F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E0F9FF1DB5FE6900FC03F0;
+			remoteInfo = frachiCustomize;
+		};
+		08E0FA281DB5FE6B00FC03F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E0F9F81DB5FE6900FC03F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E0F9FF1DB5FE6900FC03F0;
+			remoteInfo = frachiCustomize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E0FA001DB5FE6A00FC03F0 /* frachiCustomize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frachiCustomize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E0FA041DB5FE6A00FC03F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08E0FA061DB5FE6A00FC03F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08E0FA091DB5FE6A00FC03F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08E0FA0D1DB5FE6A00FC03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = frachiCustomize.xcdatamodel; sourceTree = "<group>"; };
+		08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E0FA151DB5FE6A00FC03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08E0FA171DB5FE6A00FC03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E0FA1C1DB5FE6B00FC03F0 /* frachiCustomizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frachiCustomizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E0FA201DB5FE6B00FC03F0 /* frachiCustomizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frachiCustomizeTests.m; sourceTree = "<group>"; };
+		08E0FA221DB5FE6B00FC03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E0FA271DB5FE6B00FC03F0 /* frachiCustomizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frachiCustomizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frachiCustomizeUITests.m; sourceTree = "<group>"; };
+		08E0FA2D1DB5FE6B00FC03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E0F9FD1DB5FE6900FC03F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA191DB5FE6B00FC03F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA241DB5FE6B00FC03F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E0F9F71DB5FE6900FC03F0 = {
+			isa = PBXGroup;
+			children = (
+				08E0FA021DB5FE6A00FC03F0 /* frachiCustomize */,
+				08E0FA1F1DB5FE6B00FC03F0 /* frachiCustomizeTests */,
+				08E0FA2A1DB5FE6B00FC03F0 /* frachiCustomizeUITests */,
+				08E0FA011DB5FE6A00FC03F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08E0FA011DB5FE6A00FC03F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA001DB5FE6A00FC03F0 /* frachiCustomize.app */,
+				08E0FA1C1DB5FE6B00FC03F0 /* frachiCustomizeTests.xctest */,
+				08E0FA271DB5FE6B00FC03F0 /* frachiCustomizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E0FA021DB5FE6A00FC03F0 /* frachiCustomize */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA061DB5FE6A00FC03F0 /* AppDelegate.h */,
+				08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */,
+				08E0FA091DB5FE6A00FC03F0 /* ViewController.h */,
+				08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */,
+				08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */,
+				08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */,
+				08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */,
+				08E0FA171DB5FE6A00FC03F0 /* Info.plist */,
+				08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */,
+				08E0FA031DB5FE6A00FC03F0 /* Supporting Files */,
+			);
+			path = frachiCustomize;
+			sourceTree = "<group>";
+		};
+		08E0FA031DB5FE6A00FC03F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA041DB5FE6A00FC03F0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08E0FA1F1DB5FE6B00FC03F0 /* frachiCustomizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA201DB5FE6B00FC03F0 /* frachiCustomizeTests.m */,
+				08E0FA221DB5FE6B00FC03F0 /* Info.plist */,
+			);
+			path = frachiCustomizeTests;
+			sourceTree = "<group>";
+		};
+		08E0FA2A1DB5FE6B00FC03F0 /* frachiCustomizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */,
+				08E0FA2D1DB5FE6B00FC03F0 /* Info.plist */,
+			);
+			path = frachiCustomizeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08E0F9FF1DB5FE6900FC03F0 /* frachiCustomize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E0FA301DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomize" */;
+			buildPhases = (
+				08E0F9FC1DB5FE6900FC03F0 /* Sources */,
+				08E0F9FD1DB5FE6900FC03F0 /* Frameworks */,
+				08E0F9FE1DB5FE6900FC03F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = frachiCustomize;
+			productName = frachiCustomize;
+			productReference = 08E0FA001DB5FE6A00FC03F0 /* frachiCustomize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08E0FA1B1DB5FE6B00FC03F0 /* frachiCustomizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E0FA331DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeTests" */;
+			buildPhases = (
+				08E0FA181DB5FE6B00FC03F0 /* Sources */,
+				08E0FA191DB5FE6B00FC03F0 /* Frameworks */,
+				08E0FA1A1DB5FE6B00FC03F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E0FA1E1DB5FE6B00FC03F0 /* PBXTargetDependency */,
+			);
+			name = frachiCustomizeTests;
+			productName = frachiCustomizeTests;
+			productReference = 08E0FA1C1DB5FE6B00FC03F0 /* frachiCustomizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08E0FA261DB5FE6B00FC03F0 /* frachiCustomizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E0FA361DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeUITests" */;
+			buildPhases = (
+				08E0FA231DB5FE6B00FC03F0 /* Sources */,
+				08E0FA241DB5FE6B00FC03F0 /* Frameworks */,
+				08E0FA251DB5FE6B00FC03F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E0FA291DB5FE6B00FC03F0 /* PBXTargetDependency */,
+			);
+			name = frachiCustomizeUITests;
+			productName = frachiCustomizeUITests;
+			productReference = 08E0FA271DB5FE6B00FC03F0 /* frachiCustomizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08E0F9F81DB5FE6900FC03F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = mmt;
+				TargetAttributes = {
+					08E0F9FF1DB5FE6900FC03F0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					08E0FA1B1DB5FE6B00FC03F0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08E0F9FF1DB5FE6900FC03F0;
+					};
+					08E0FA261DB5FE6B00FC03F0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08E0F9FF1DB5FE6900FC03F0;
+					};
+				};
+			};
+			buildConfigurationList = 08E0F9FB1DB5FE6900FC03F0 /* Build configuration list for PBXProject "frachiCustomize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08E0F9F71DB5FE6900FC03F0;
+			productRefGroup = 08E0FA011DB5FE6A00FC03F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08E0F9FF1DB5FE6900FC03F0 /* frachiCustomize */,
+				08E0FA1B1DB5FE6B00FC03F0 /* frachiCustomizeTests */,
+				08E0FA261DB5FE6B00FC03F0 /* frachiCustomizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E0F9FE1DB5FE6900FC03F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E0FA161DB5FE6A00FC03F0 /* LaunchScreen.storyboard in Resources */,
+				08E0FA131DB5FE6A00FC03F0 /* Assets.xcassets in Resources */,
+				08E0FA0E1DB5FE6A00FC03F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA1A1DB5FE6B00FC03F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA251DB5FE6B00FC03F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E0F9FC1DB5FE6900FC03F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E0FA111DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld in Sources */,
+				08E0FA0B1DB5FE6A00FC03F0 /* ViewController.m in Sources */,
+				08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */,
+				08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA181DB5FE6B00FC03F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E0FA211DB5FE6B00FC03F0 /* frachiCustomizeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E0FA231DB5FE6B00FC03F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E0FA2C1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E0FA1E1DB5FE6B00FC03F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E0F9FF1DB5FE6900FC03F0 /* frachiCustomize */;
+			targetProxy = 08E0FA1D1DB5FE6B00FC03F0 /* PBXContainerItemProxy */;
+		};
+		08E0FA291DB5FE6B00FC03F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E0F9FF1DB5FE6900FC03F0 /* frachiCustomize */;
+			targetProxy = 08E0FA281DB5FE6B00FC03F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E0FA0D1DB5FE6A00FC03F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E0FA151DB5FE6A00FC03F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08E0FA2E1DB5FE6B00FC03F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		08E0FA2F1DB5FE6B00FC03F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08E0FA311DB5FE6B00FC03F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = frachiCustomize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08E0FA321DB5FE6B00FC03F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = frachiCustomize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08E0FA341DB5FE6B00FC03F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = frachiCustomizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frachiCustomize.app/frachiCustomize";
+			};
+			name = Debug;
+		};
+		08E0FA351DB5FE6B00FC03F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = frachiCustomizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frachiCustomize.app/frachiCustomize";
+			};
+			name = Release;
+		};
+		08E0FA371DB5FE6B00FC03F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = frachiCustomizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = frachiCustomize;
+			};
+			name = Debug;
+		};
+		08E0FA381DB5FE6B00FC03F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = frachiCustomizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = frachiCustomize;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08E0F9FB1DB5FE6900FC03F0 /* Build configuration list for PBXProject "frachiCustomize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E0FA2E1DB5FE6B00FC03F0 /* Debug */,
+				08E0FA2F1DB5FE6B00FC03F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E0FA301DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E0FA311DB5FE6B00FC03F0 /* Debug */,
+				08E0FA321DB5FE6B00FC03F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08E0FA331DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E0FA341DB5FE6B00FC03F0 /* Debug */,
+				08E0FA351DB5FE6B00FC03F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08E0FA361DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E0FA371DB5FE6B00FC03F0 /* Debug */,
+				08E0FA381DB5FE6B00FC03F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */,
+			);
+			currentVersion = 08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */;
+			path = frachiCustomize.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 08E0F9F81DB5FE6900FC03F0 /* Project object */;
+}
