@@ -429,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,6 +513,7 @@
 				08E0FA321DB5FE6B00FC03F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08E0FA331DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +522,7 @@
 				08E0FA351DB5FE6B00FC03F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08E0FA361DB5FE6B00FC03F0 /* Build configuration list for PBXNativeTarget "frachiCustomizeUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +531,7 @@
 				08E0FA381DB5FE6B00FC03F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
