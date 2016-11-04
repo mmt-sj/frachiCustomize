@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "User.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    User *user=[[User alloc]init];
+    [user addUser:@"admin" Password:@"admin"];
     return YES;
 }
 

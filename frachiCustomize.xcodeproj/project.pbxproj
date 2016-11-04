@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081AA3271DC9E82D0003D72B /* SetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3261DC9E82D0003D72B /* SetPasswordViewController.m */; };
+		081AA32A1DC9F9070003D72B /* AddDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3291DC9F9070003D72B /* AddDeviceViewController.m */; };
+		081AA32D1DC9F9270003D72B /* IntellectAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AA32C1DC9F9270003D72B /* IntellectAddViewController.m */; };
+		081AA3311DCA18CA0003D72B /* mtButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AA3301DCA18CA0003D72B /* mtButton.m */; };
+		085492731DCAD61500D3E08B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085492721DCAD61500D3E08B /* QuartzCore.framework */; };
+		085492791DCAD70200D3E08B /* XHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 085492781DCAD70200D3E08B /* XHToast.m */; };
+		0854927F1DCAEAD100D3E08B /* MtTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854927E1DCAEAD100D3E08B /* MtTextField.m */; };
+		08A4AA9B1DC1A12C00FA1DEB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */; };
 		08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA041DB5FE6A00FC03F0 /* main.m */; };
 		08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */; };
 		08E0FA0B1DB5FE6A00FC03F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */; };
 		08E0FA0E1DB5FE6A00FC03F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */; };
-		08E0FA111DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */; };
 		08E0FA131DB5FE6A00FC03F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */; };
 		08E0FA161DB5FE6A00FC03F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */; };
 		08E0FA211DB5FE6B00FC03F0 /* frachiCustomizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA201DB5FE6B00FC03F0 /* frachiCustomizeTests.m */; };
 		08E0FA2C1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */; };
+		08E66A7D1DC8410A00141A56 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A7C1DC8410A00141A56 /* DetailViewController.m */; };
+		08E66A801DC8415800141A56 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A7F1DC8415800141A56 /* MasterViewController.m */; };
+		08E66A831DC88BB500141A56 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A811DC88BB500141A56 /* Model.xcdatamodeld */; };
+		08E66A861DC88D2400141A56 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E66A851DC88D2400141A56 /* CoreData.framework */; };
+		08E66AA71DC8BC9F00141A56 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66AA61DC8BC9F00141A56 /* User.m */; };
+		08E66AAE1DC8C55500141A56 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E66AAD1DC8C55500141A56 /* libc++.tbd */; };
+		08E66AB11DC8CA5500141A56 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66AB01DC8CA5500141A56 /* Device.m */; };
+		08E66AB31DC9C12D00141A56 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E66AAA1DC8C49100141A56 /* Realm.framework */; };
+		08E78A931DCB6A2F00BBA069 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E78A921DCB6A2F00BBA069 /* DeviceDetailViewController.m */; };
+		08F6EACB1DBEF3F6007B2C7A /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08F6EACA1DBEF3F6007B2C7A /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081AA3251DC9E82D0003D72B /* SetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPasswordViewController.h; sourceTree = "<group>"; };
+		081AA3261DC9E82D0003D72B /* SetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPasswordViewController.m; sourceTree = "<group>"; };
+		081AA3281DC9F9070003D72B /* AddDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeviceViewController.h; sourceTree = "<group>"; };
+		081AA3291DC9F9070003D72B /* AddDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeviceViewController.m; sourceTree = "<group>"; };
+		081AA32B1DC9F9270003D72B /* IntellectAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntellectAddViewController.h; sourceTree = "<group>"; };
+		081AA32C1DC9F9270003D72B /* IntellectAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntellectAddViewController.m; sourceTree = "<group>"; };
+		081AA32F1DCA18CA0003D72B /* mtButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mtButton.h; sourceTree = "<group>"; };
+		081AA3301DCA18CA0003D72B /* mtButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mtButton.m; sourceTree = "<group>"; };
+		085492721DCAD61500D3E08B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		085492771DCAD70200D3E08B /* XHToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHToast.h; sourceTree = "<group>"; };
+		085492781DCAD70200D3E08B /* XHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHToast.m; sourceTree = "<group>"; };
+		0854927D1DCAEAD100D3E08B /* MtTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtTextField.h; sourceTree = "<group>"; };
+		0854927E1DCAEAD100D3E08B /* MtTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtTextField.m; sourceTree = "<group>"; };
+		08A4AA991DC1A12C00FA1DEB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		08E0FA001DB5FE6A00FC03F0 /* frachiCustomize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frachiCustomize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E0FA041DB5FE6A00FC03F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08E0FA061DB5FE6A00FC03F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +75,6 @@
 		08E0FA091DB5FE6A00FC03F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		08E0FA0D1DB5FE6A00FC03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = frachiCustomize.xcdatamodel; sourceTree = "<group>"; };
 		08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E0FA151DB5FE6A00FC03F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E0FA171DB5FE6A00FC03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +84,21 @@
 		08E0FA271DB5FE6B00FC03F0 /* frachiCustomizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = frachiCustomizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frachiCustomizeUITests.m; sourceTree = "<group>"; };
 		08E0FA2D1DB5FE6B00FC03F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E66A7B1DC8410A00141A56 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		08E66A7C1DC8410A00141A56 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		08E66A7E1DC8415800141A56 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		08E66A7F1DC8415800141A56 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		08E66A821DC88BB500141A56 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		08E66A851DC88D2400141A56 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		08E66AA51DC8BC9F00141A56 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		08E66AA61DC8BC9F00141A56 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		08E66AAA1DC8C49100141A56 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		08E66AAD1DC8C55500141A56 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		08E66AAF1DC8CA5500141A56 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		08E66AB01DC8CA5500141A56 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		08E78A911DCB6A2F00BBA069 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
+		08E78A921DCB6A2F00BBA069 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
+		08F6EACA1DBEF3F6007B2C7A /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +106,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085492731DCAD61500D3E08B /* QuartzCore.framework in Frameworks */,
+				08E66AB31DC9C12D00141A56 /* Realm.framework in Frameworks */,
+				08E66AAE1DC8C55500141A56 /* libc++.tbd in Frameworks */,
+				08E66A861DC88D2400141A56 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +130,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081AA32E1DCA18B20003D72B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				085492771DCAD70200D3E08B /* XHToast.h */,
+				085492781DCAD70200D3E08B /* XHToast.m */,
+				081AA32F1DCA18CA0003D72B /* mtButton.h */,
+				081AA3301DCA18CA0003D72B /* mtButton.m */,
+				0854927D1DCAEAD100D3E08B /* MtTextField.h */,
+				0854927E1DCAEAD100D3E08B /* MtTextField.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		085492711DCAD61500D3E08B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085492721DCAD61500D3E08B /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08A4AA961DC07A4B00FA1DEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08E66A811DC88BB500141A56 /* Model.xcdatamodeld */,
+				08E66AA51DC8BC9F00141A56 /* User.h */,
+				08E66AA61DC8BC9F00141A56 /* User.m */,
+				08E66AAF1DC8CA5500141A56 /* Device.h */,
+				08E66AB01DC8CA5500141A56 /* Device.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		08A4AA971DC07A5600FA1DEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */,
+				08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		08A4AA981DC07A5C00FA1DEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08E66A771DC837C200141A56 /* set */,
+				08E0FA091DB5FE6A00FC03F0 /* ViewController.h */,
+				08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */,
+				08A4AA991DC1A12C00FA1DEB /* LoginViewController.h */,
+				08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		08E0F9F71DB5FE6900FC03F0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +191,7 @@
 				08E0FA1F1DB5FE6B00FC03F0 /* frachiCustomizeTests */,
 				08E0FA2A1DB5FE6B00FC03F0 /* frachiCustomizeUITests */,
 				08E0FA011DB5FE6A00FC03F0 /* Products */,
+				085492711DCAD61500D3E08B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +208,14 @@
 		08E0FA021DB5FE6A00FC03F0 /* frachiCustomize */ = {
 			isa = PBXGroup;
 			children = (
+				081AA32E1DCA18B20003D72B /* Other */,
+				08E66A841DC88D2400141A56 /* Frameworks */,
+				08A4AA981DC07A5C00FA1DEB /* Controller */,
+				08A4AA971DC07A5600FA1DEB /* View */,
+				08A4AA961DC07A4B00FA1DEB /* Model */,
 				08E0FA061DB5FE6A00FC03F0 /* AppDelegate.h */,
 				08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */,
-				08E0FA091DB5FE6A00FC03F0 /* ViewController.h */,
-				08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */,
-				08E0FA0C1DB5FE6A00FC03F0 /* Main.storyboard */,
 				08E0FA121DB5FE6A00FC03F0 /* Assets.xcassets */,
-				08E0FA141DB5FE6A00FC03F0 /* LaunchScreen.storyboard */,
-				08E0FA171DB5FE6A00FC03F0 /* Info.plist */,
-				08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */,
 				08E0FA031DB5FE6A00FC03F0 /* Supporting Files */,
 			);
 			path = frachiCustomize;
@@ -120,6 +224,8 @@
 		08E0FA031DB5FE6A00FC03F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				08E0FA171DB5FE6A00FC03F0 /* Info.plist */,
+				08F6EACA1DBEF3F6007B2C7A /* bg.jpg */,
 				08E0FA041DB5FE6A00FC03F0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +247,36 @@
 				08E0FA2D1DB5FE6B00FC03F0 /* Info.plist */,
 			);
 			path = frachiCustomizeUITests;
+			sourceTree = "<group>";
+		};
+		08E66A771DC837C200141A56 /* set */ = {
+			isa = PBXGroup;
+			children = (
+				08E66A7B1DC8410A00141A56 /* DetailViewController.h */,
+				08E66A7C1DC8410A00141A56 /* DetailViewController.m */,
+				08E66A7E1DC8415800141A56 /* MasterViewController.h */,
+				08E66A7F1DC8415800141A56 /* MasterViewController.m */,
+				081AA3251DC9E82D0003D72B /* SetPasswordViewController.h */,
+				081AA3261DC9E82D0003D72B /* SetPasswordViewController.m */,
+				081AA3281DC9F9070003D72B /* AddDeviceViewController.h */,
+				081AA3291DC9F9070003D72B /* AddDeviceViewController.m */,
+				081AA32B1DC9F9270003D72B /* IntellectAddViewController.h */,
+				081AA32C1DC9F9270003D72B /* IntellectAddViewController.m */,
+				08E78A911DCB6A2F00BBA069 /* DeviceDetailViewController.h */,
+				08E78A921DCB6A2F00BBA069 /* DeviceDetailViewController.m */,
+			);
+			name = set;
+			sourceTree = "<group>";
+		};
+		08E66A841DC88D2400141A56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08E66AAD1DC8C55500141A56 /* libc++.tbd */,
+				08E66AAA1DC8C49100141A56 /* Realm.framework */,
+				08E66A851DC88D2400141A56 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,17 +346,17 @@
 				TargetAttributes = {
 					08E0F9FF1DB5FE6900FC03F0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L2G75RLFR3;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					08E0FA1B1DB5FE6B00FC03F0 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 08E0F9FF1DB5FE6900FC03F0;
 					};
 					08E0FA261DB5FE6B00FC03F0 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 08E0F9FF1DB5FE6900FC03F0;
 					};
 				};
 			};
@@ -251,6 +387,7 @@
 			files = (
 				08E0FA161DB5FE6A00FC03F0 /* LaunchScreen.storyboard in Resources */,
 				08E0FA131DB5FE6A00FC03F0 /* Assets.xcassets in Resources */,
+				08F6EACB1DBEF3F6007B2C7A /* bg.jpg in Resources */,
 				08E0FA0E1DB5FE6A00FC03F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,10 +413,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E0FA111DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld in Sources */,
+				081AA3271DC9E82D0003D72B /* SetPasswordViewController.m in Sources */,
 				08E0FA0B1DB5FE6A00FC03F0 /* ViewController.m in Sources */,
 				08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */,
+				081AA32D1DC9F9270003D72B /* IntellectAddViewController.m in Sources */,
+				081AA3311DCA18CA0003D72B /* mtButton.m in Sources */,
+				08E66A831DC88BB500141A56 /* Model.xcdatamodeld in Sources */,
+				08E66AB11DC8CA5500141A56 /* Device.m in Sources */,
+				081AA32A1DC9F9070003D72B /* AddDeviceViewController.m in Sources */,
 				08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */,
+				08E78A931DCB6A2F00BBA069 /* DeviceDetailViewController.m in Sources */,
+				0854927F1DCAEAD100D3E08B /* MtTextField.m in Sources */,
+				08E66AA71DC8BC9F00141A56 /* User.m in Sources */,
+				08A4AA9B1DC1A12C00FA1DEB /* LoginViewController.m in Sources */,
+				085492791DCAD70200D3E08B /* XHToast.m in Sources */,
+				08E66A7D1DC8410A00141A56 /* DetailViewController.m in Sources */,
+				08E66A801DC8415800141A56 /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,11 +577,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = L2G75RLFR3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "frachiCustomize-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -440,57 +600,77 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = L2G75RLFR3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "frachiCustomize-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		08E0FA341DB5FE6B00FC03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = frachiCustomizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frachiCustomize.app/frachiCustomize";
 			};
 			name = Debug;
 		};
 		08E0FA351DB5FE6B00FC03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = frachiCustomizeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/frachiCustomize.app/frachiCustomize";
 			};
 			name = Release;
 		};
 		08E0FA371DB5FE6B00FC03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = frachiCustomizeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = frachiCustomize;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		08E0FA381DB5FE6B00FC03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = frachiCustomizeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomizeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = frachiCustomize;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -536,13 +716,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		08E0FA0F1DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodeld */ = {
+		08E66A811DC88BB500141A56 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */,
+				08E66A821DC88BB500141A56 /* Model.xcdatamodel */,
 			);
-			currentVersion = 08E0FA101DB5FE6A00FC03F0 /* frachiCustomize.xcdatamodel */;
-			path = frachiCustomize.xcdatamodeld;
+			currentVersion = 08E66A821DC88BB500141A56 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
