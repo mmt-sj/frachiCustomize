@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 #import "mtButton.h"
-@interface ViewController ()
+#import "PopoverContextViewController.h"
+#import "Device.h"
+#import "XHToast.h"
+@interface ViewController ()<UIPopoverControllerDelegate>
 @property (strong, nonatomic) IBOutlet UIView *bottomView;
 @property(nonatomic,strong)mtButton* lampABtn;
 @property(nonatomic,strong)mtButton* lampOff;
@@ -16,20 +19,70 @@
 @property(nonatomic,strong)mtButton* doorOpen;
 @property(nonatomic,strong)mtButton* doorStop;
 @property(nonatomic,strong)mtButton* doorClose;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+
+@property(nonatomic,strong)UIPopoverController* popverController;
+
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    NSMutableArray *_allButton;
+    Device *_device;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.textView.layoutManager.allowsNonContiguousLayout = NO;
+    self.textView.editable=NO;
     // Do any additional setup after loading the view, typically from a nib.
+    _allButton=[[NSMutableArray alloc]init];
+    _device=[[Device alloc]init];
     [self addView];
-}
+    NSArray * array=[self.view subviews];
+    for (UIView *temp in array) {
+        if([temp isKindOfClass:[UIButton class]]){
+            //是button
+            [_allButton addObject:temp];
+        }
+    }
+    for (UIButton *btns in _allButton) {
+        if(btns.tag<100&&btns.tag>0){
+            [btns addTarget:self action:@selector(mapAction:) forControlEvents:UIControlEventTouchUpInside];
+        }
+    }
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)initPopover:(id)sender{
+    UIButton *btn=(UIButton *)sender;
+    PopoverContextViewController *popoverView=[[PopoverContextViewController alloc]init];
+    if(!([_device selectDevice:(int)btn.tag])){
+        [XHToast showCenterWithText:@"沒有設置相對應的硬件設備！"];
+        return;
+    }
+    _device=[_device selectOneDevice:(int)btn.tag];
+    popoverView.type=_device.type;
+    popoverView.deviceID=_device.ID;
+    
+    CGFloat popoverHeight=400;
+    if(_device.type!=0){
+        popoverHeight=300;
+    }
+    self.popverController=[[UIPopoverController alloc]initWithContentViewController:popoverView];
+    popoverView.textView=self.textView;
+    self.popverController.delegate=popoverView;
+    [self.popverController setPopoverContentSize:CGSizeMake(400, popoverHeight) animated:YES];
+    [self.popverController presentPopoverFromRect:btn.bounds inView:btn permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    
+}
+-(void)mapAction:(id)sender{
+    NSLog(@"sender tag is %d",(int)[sender tag]);
+    //xianshi
+    [self initPopover:sender];
 }
 -(void)addView{
     //6個按鈕 每個那妞的寬度130

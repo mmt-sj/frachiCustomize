@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HFSmartLink.h"
+#import "smartlinklib_7x.h"
+#import "HFSmartLinkDeviceInfo.h"
+#import <SystemConfiguration/CaptiveNetwork.h>
 @interface IntellectAddViewController : UIViewController
 
 @end

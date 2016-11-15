@@ -22,4 +22,5 @@
 -(NSInteger)deleteDevice:(int)ID;
 -(Device*)selectOneDevice:(int)ID;
 -(NSInteger)autoGetNumber;
+-(NSInteger)selectDevice:(int)ID;
 @end

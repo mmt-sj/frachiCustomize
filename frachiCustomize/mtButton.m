@@ -10,7 +10,7 @@
 #define animateDelay 0.15
 #define defaultScale 0.9
 
-#define btnColor [UIColor colorWithRed:76/255.0 green:71/255.0 blue:68/255.0 alpha:1.0]
+
 
 @interface mtButton()
 @property(nonatomic,strong)UIView *buttonStateView;
@@ -19,9 +19,9 @@
 
 
 @implementation mtButton
-{
     //UIView *buttonStateView;
-}
+
+
 +(mtButton *)buttonWithFrame:(CGRect)frame title:(NSString *)title andBlock:(ClickBlock)tempBlock{
     return  [mtButton buttonWithType:UIButtonTypeCustom frame:frame title:title titleColor:[UIColor whiteColor] backgroundColor:btnColor backgroundImage:nil andBlock:tempBlock];
 }
@@ -48,6 +48,12 @@
     pushBtn.titleLabel.textAlignment=NSTextAlignmentCenter;
     return pushBtn;
 }
++ (mtButton *)touchUpOutsideCancelButtonWithFrame:(CGRect)frame
+                                           title:(NSString *)title
+                                         andBlock:(ClickBlock)tempBlock{
+    return [mtButton touchUpOutsideCancelButtonWithType:UIButtonTypeCustom frame:frame title:title titleColor:[UIColor whiteColor] backgroundColor:btnColor backgroundImage:nil andBlock:tempBlock];
+
+}
 
 + (mtButton *)touchUpOutsideCancelButtonWithType:(UIButtonType)type
                                                   frame:(CGRect)frame
@@ -72,15 +78,21 @@
     pushBtn.layer.cornerRadius=15;
     pushBtn.layer.masksToBounds=YES;
     
-    //添加原点
 
-  
     //给按钮的block赋值
     pushBtn.clickBlock = tempBlock;
     
     return pushBtn;
 }
-
+-(void)setStatusColor:(UIColor* )color{
+    self.status.backgroundColor=color;
+}
+-(void)addStatusView{
+    self.status=[[UIView alloc]initWithFrame:CGRectMake((self.frame.size.width-5)/2-2, self.frame.size.height-20, 10, 10)];
+    self.status.layer.masksToBounds=YES;
+    self.status.layer.cornerRadius=5;
+    [self addSubview:_status];
+}
 //按钮的压下事件 按钮缩小
 - (void)pressedEvent:(mtButton *)btn
 {

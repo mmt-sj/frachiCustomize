@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define btnColor [UIColor colorWithRed:76/255.0 green:71/255.0 blue:68/255.0 alpha:1.0]
 typedef void(^ClickBlock)();
 
 @interface mtButton : UIButton
@@ -15,7 +15,7 @@ typedef void(^ClickBlock)();
 @property (nonatomic, copy) ClickBlock clickBlock;
 @property (nonatomic, assign) CGFloat buttonScale;//缩小的比率，小于=1.0,大于0.0
 
-
+@property(nonatomic,strong)UIView* status;
 
 //@property(nonatomic,assign) BOOL ButtonState;
 //常规方法
@@ -39,5 +39,10 @@ typedef void(^ClickBlock)();
                                                andBlock:(ClickBlock)tempBlock
                                                 ;
 
++ (mtButton *)touchUpOutsideCancelButtonWithFrame:(CGRect)frame
+                                            title:(NSString *)title
+                                         andBlock:(ClickBlock)tempBlock;
 
+-(void)setStatusColor:(UIColor*)color;
+-(void)addStatusView;
 @end

@@ -14,6 +14,11 @@
 		085492731DCAD61500D3E08B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085492721DCAD61500D3E08B /* QuartzCore.framework */; };
 		085492791DCAD70200D3E08B /* XHToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 085492781DCAD70200D3E08B /* XHToast.m */; };
 		0854927F1DCAEAD100D3E08B /* MtTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0854927E1DCAEAD100D3E08B /* MtTextField.m */; };
+		089E7A851DCCDCC90092E020 /* PopoverContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089E7A841DCCDCC90092E020 /* PopoverContextViewController.m */; };
+		089E7A881DCDB4560092E020 /* deviceString.m in Sources */ = {isa = PBXBuildFile; fileRef = 089E7A871DCDB4560092E020 /* deviceString.m */; };
+		089E7A8D1DCDB9B30092E020 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 089E7A8C1DCDB9B30092E020 /* AsyncSocket.m */; };
+		089E7A901DCDB9FE0092E020 /* MTSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 089E7A8F1DCDB9FE0092E020 /* MTSocketController.m */; };
+		089E7A951DCDBA1C0092E020 /* libsmartlinklib_7x.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 089E7A931DCDBA1C0092E020 /* libsmartlinklib_7x.a */; };
 		08A4AA9B1DC1A12C00FA1DEB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */; };
 		08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA041DB5FE6A00FC03F0 /* main.m */; };
 		08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA071DB5FE6A00FC03F0 /* AppDelegate.m */; };
@@ -25,7 +30,6 @@
 		08E0FA2C1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E0FA2B1DB5FE6B00FC03F0 /* frachiCustomizeUITests.m */; };
 		08E66A7D1DC8410A00141A56 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A7C1DC8410A00141A56 /* DetailViewController.m */; };
 		08E66A801DC8415800141A56 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A7F1DC8415800141A56 /* MasterViewController.m */; };
-		08E66A831DC88BB500141A56 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E66A811DC88BB500141A56 /* Model.xcdatamodeld */; };
 		08E66A861DC88D2400141A56 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E66A851DC88D2400141A56 /* CoreData.framework */; };
 		08E66AA71DC8BC9F00141A56 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E66AA61DC8BC9F00141A56 /* User.m */; };
 		08E66AAE1DC8C55500141A56 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E66AAD1DC8C55500141A56 /* libc++.tbd */; };
@@ -66,6 +70,18 @@
 		085492781DCAD70200D3E08B /* XHToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHToast.m; sourceTree = "<group>"; };
 		0854927D1DCAEAD100D3E08B /* MtTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtTextField.h; sourceTree = "<group>"; };
 		0854927E1DCAEAD100D3E08B /* MtTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtTextField.m; sourceTree = "<group>"; };
+		089E7A831DCCDCC90092E020 /* PopoverContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverContextViewController.h; sourceTree = "<group>"; };
+		089E7A841DCCDCC90092E020 /* PopoverContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverContextViewController.m; sourceTree = "<group>"; };
+		089E7A861DCDB4560092E020 /* deviceString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceString.h; sourceTree = "<group>"; };
+		089E7A871DCDB4560092E020 /* deviceString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceString.m; sourceTree = "<group>"; };
+		089E7A8B1DCDB9B30092E020 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		089E7A8C1DCDB9B30092E020 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		089E7A8E1DCDB9FE0092E020 /* MTSocketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSocketController.h; sourceTree = "<group>"; };
+		089E7A8F1DCDB9FE0092E020 /* MTSocketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSocketController.m; sourceTree = "<group>"; };
+		089E7A911DCDBA1C0092E020 /* HFSmartLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLink.h; sourceTree = "<group>"; };
+		089E7A921DCDBA1C0092E020 /* HFSmartLinkDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLinkDeviceInfo.h; sourceTree = "<group>"; };
+		089E7A931DCDBA1C0092E020 /* libsmartlinklib_7x.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmartlinklib_7x.a; sourceTree = "<group>"; };
+		089E7A941DCDBA1C0092E020 /* smartlinklib_7x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smartlinklib_7x.h; sourceTree = "<group>"; };
 		08A4AA991DC1A12C00FA1DEB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		08E0FA001DB5FE6A00FC03F0 /* frachiCustomize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frachiCustomize.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +104,6 @@
 		08E66A7C1DC8410A00141A56 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		08E66A7E1DC8415800141A56 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		08E66A7F1DC8415800141A56 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		08E66A821DC88BB500141A56 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		08E66A851DC88D2400141A56 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		08E66AA51DC8BC9F00141A56 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		08E66AA61DC8BC9F00141A56 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -110,6 +125,7 @@
 				08E66AB31DC9C12D00141A56 /* Realm.framework in Frameworks */,
 				08E66AAE1DC8C55500141A56 /* libc++.tbd in Frameworks */,
 				08E66A861DC88D2400141A56 /* CoreData.framework in Frameworks */,
+				089E7A951DCDBA1C0092E020 /* libsmartlinklib_7x.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +149,8 @@
 		081AA32E1DCA18B20003D72B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				089E7A861DCDB4560092E020 /* deviceString.h */,
+				089E7A871DCDB4560092E020 /* deviceString.m */,
 				085492771DCAD70200D3E08B /* XHToast.h */,
 				085492781DCAD70200D3E08B /* XHToast.m */,
 				081AA32F1DCA18CA0003D72B /* mtButton.h */,
@@ -151,10 +169,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		089E7A891DCDB9950092E020 /* Smart */ = {
+			isa = PBXGroup;
+			children = (
+				089E7A911DCDBA1C0092E020 /* HFSmartLink.h */,
+				089E7A921DCDBA1C0092E020 /* HFSmartLinkDeviceInfo.h */,
+				089E7A931DCDBA1C0092E020 /* libsmartlinklib_7x.a */,
+				089E7A941DCDBA1C0092E020 /* smartlinklib_7x.h */,
+			);
+			name = Smart;
+			sourceTree = "<group>";
+		};
+		089E7A8A1DCDB99E0092E020 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				089E7A8E1DCDB9FE0092E020 /* MTSocketController.h */,
+				089E7A8F1DCDB9FE0092E020 /* MTSocketController.m */,
+				089E7A8B1DCDB9B30092E020 /* AsyncSocket.h */,
+				089E7A8C1DCDB9B30092E020 /* AsyncSocket.m */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
 		08A4AA961DC07A4B00FA1DEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				08E66A811DC88BB500141A56 /* Model.xcdatamodeld */,
 				08E66AA51DC8BC9F00141A56 /* User.h */,
 				08E66AA61DC8BC9F00141A56 /* User.m */,
 				08E66AAF1DC8CA5500141A56 /* Device.h */,
@@ -180,6 +219,8 @@
 				08E0FA0A1DB5FE6A00FC03F0 /* ViewController.m */,
 				08A4AA991DC1A12C00FA1DEB /* LoginViewController.h */,
 				08A4AA9A1DC1A12C00FA1DEB /* LoginViewController.m */,
+				089E7A831DCCDCC90092E020 /* PopoverContextViewController.h */,
+				089E7A841DCCDCC90092E020 /* PopoverContextViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -208,6 +249,8 @@
 		08E0FA021DB5FE6A00FC03F0 /* frachiCustomize */ = {
 			isa = PBXGroup;
 			children = (
+				089E7A8A1DCDB99E0092E020 /* Socket */,
+				089E7A891DCDB9950092E020 /* Smart */,
 				081AA32E1DCA18B20003D72B /* Other */,
 				08E66A841DC88D2400141A56 /* Frameworks */,
 				08A4AA981DC07A5C00FA1DEB /* Controller */,
@@ -417,17 +460,20 @@
 				08E0FA0B1DB5FE6A00FC03F0 /* ViewController.m in Sources */,
 				08E0FA081DB5FE6A00FC03F0 /* AppDelegate.m in Sources */,
 				081AA32D1DC9F9270003D72B /* IntellectAddViewController.m in Sources */,
+				089E7A8D1DCDB9B30092E020 /* AsyncSocket.m in Sources */,
 				081AA3311DCA18CA0003D72B /* mtButton.m in Sources */,
-				08E66A831DC88BB500141A56 /* Model.xcdatamodeld in Sources */,
 				08E66AB11DC8CA5500141A56 /* Device.m in Sources */,
 				081AA32A1DC9F9070003D72B /* AddDeviceViewController.m in Sources */,
 				08E0FA051DB5FE6A00FC03F0 /* main.m in Sources */,
+				089E7A851DCCDCC90092E020 /* PopoverContextViewController.m in Sources */,
 				08E78A931DCB6A2F00BBA069 /* DeviceDetailViewController.m in Sources */,
 				0854927F1DCAEAD100D3E08B /* MtTextField.m in Sources */,
 				08E66AA71DC8BC9F00141A56 /* User.m in Sources */,
 				08A4AA9B1DC1A12C00FA1DEB /* LoginViewController.m in Sources */,
 				085492791DCAD70200D3E08B /* XHToast.m in Sources */,
 				08E66A7D1DC8410A00141A56 /* DetailViewController.m in Sources */,
+				089E7A901DCDB9FE0092E020 /* MTSocketController.m in Sources */,
+				089E7A881DCDB4560092E020 /* deviceString.m in Sources */,
 				08E66A801DC8415800141A56 /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +622,7 @@
 		08E0FA311DB5FE6B00FC03F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L2G75RLFR3;
@@ -587,6 +634,11 @@
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/frachiCustomize",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "frachiCustomize-Bridging-Header.h";
@@ -599,6 +651,7 @@
 		08E0FA321DB5FE6B00FC03F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L2G75RLFR3;
@@ -610,6 +663,11 @@
 				INFOPLIST_FILE = frachiCustomize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/frachiCustomize",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "frachiCustomize-Bridging-Header.h";
@@ -714,19 +772,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		08E66A811DC88BB500141A56 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				08E66A821DC88BB500141A56 /* Model.xcdatamodel */,
-			);
-			currentVersion = 08E66A821DC88BB500141A56 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 08E0F9F81DB5FE6900FC03F0 /* Project object */;
 }

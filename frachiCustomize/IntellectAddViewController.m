@@ -11,6 +11,9 @@
 #import "mtButton.h"
 #import "Device.h"
 #import "XHToast.h"
+
+
+
 @interface IntellectAddViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)MtTextField *ssidTextField;
 @property(nonatomic,strong)MtTextField *passwordTextField;
@@ -22,6 +25,9 @@
 
 @implementation IntellectAddViewController{
     NSMutableArray *_muAddDevice;
+    
+    HFSmartLink * smtlk;
+    BOOL isconnecting;
 }
 
 - (void)viewDidLoad {
@@ -31,6 +37,61 @@
     self.view.backgroundColor=[UIColor whiteColor];
     _muAddDevice=[[NSMutableArray alloc]init];
     [self addView];
+    
+    smtlk = [HFSmartLink shareInstence];
+    smtlk.isConfigOneDevice = true;
+    smtlk.waitTimers = 30;
+    isconnecting=false;
+    self.isOneDeviceSwitch.on=smtlk.isConfigOneDevice;
+    [self showWifiSsid];
+    self.passwordTextField.text=[self getPwdBySsid:self.ssidTextField.text];
+
+
+}
+-(void)showWifiSsid
+{
+    BOOL wifiOK=FALSE;
+    NSDictionary *ifs;
+    NSString *ssid;
+    if(!wifiOK)
+    {
+        ifs=[self fetchSsidInfo];
+        ssid=[ifs objectForKey:@"SSID"];
+        if(ssid!=nil)
+        {
+            wifiOK=TRUE;
+            self.ssidTextField.text=ssid;
+        }
+        else
+        {
+            [XHToast showSplitCenterWithText:@"請連接Wi-Fi!"];
+        }
+    }
+    
+}
+-(id)fetchSsidInfo{
+    NSArray *ifs=(__bridge_transfer id)CNCopySupportedInterfaces();
+    NSLog(@"supported interfaces:%@",ifs);
+    id info=nil;
+    for (NSString *ifnam  in ifs) {
+        info=(__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+        NSLog(@"%@=>%@",ifnam,info);
+        if(info&&[info count]){
+            break;
+        }
+        
+    }
+    return  info;
+}
+-(void)savePassword
+{
+    NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
+    [def setObject:self.passwordTextField.text forKey:self.ssidTextField.text];
+}
+-(NSString *)getPwdBySsid:(NSString *)ssid
+{
+    NSUserDefaults *def=[NSUserDefaults standardUserDefaults];
+    return [def objectForKey:ssid];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +108,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)connectStopInterface{
+#warning message
+}
+-(void)connectStartInterface{
+#warning message
+}
 -(void)addView{
     CGFloat boxX=self.view.frame.size.width/3-150;
 
@@ -68,17 +135,67 @@
     [self.view addSubview:self.isOneDeviceSwitch];
     
     self.mtbutton=[mtButton buttonWithFrame:CGRectMake(boxX, 230, 300, 40) title:@"開始配置" andBlock:^{
-        Device *device=[[Device alloc]init];
-        if([device addDevice:(int)[device autoGetNumber] ColorID:(int)[device autoGetNumber] IP:@"192.145.43.3" Port:@"8899" Type:0 Remark:@"智能添加"]){
-            [_muAddDevice addObject:device];
-            [XHToast showSplitCenterWithText:@"添加成功"];
-    //       NSLog(@"智能添加的ID:%d",device.ID);
-            [self.tableView reloadData];
-        }else{
-            [XHToast showSplitCenterWithText:@"添加失敗"];
+        
+        [self.mtbutton setTitle:@"正在配置..." forState:UIControlStateNormal];
+        
+        /////////////////
+        NSString* ssidStr=self.ssidTextField.text;
+        NSString* pswdStr=self.passwordTextField.text;
+        
+        if(!isconnecting)
+        {
+            isconnecting=true;
+            [self connectStartInterface];
+            [smtlk startWithSSID:ssidStr Key:pswdStr withV3x:true processblock:^(NSInteger process) {
+                //進度條
+            } successBlock:^(HFSmartLinkDeviceInfo *dev) {
+                [XHToast showSplitCenterWithText:[NSString stringWithFormat:@"%@:%@",dev.mac,dev.ip]];
+                //將ip存儲到plist中
+#warning 存储到数据库中
+                //存储
+                Device *device=[[Device alloc]init];
+                if([device addDevice:(int)[device autoGetNumber] ColorID:(int)[device autoGetNumber] IP:dev.ip Port:@"8899" Type:0 Remark:@"智能添加"]){
+                 [_muAddDevice addObject:device];
+                    [self.tableView reloadData];
+                }else{
+                    [XHToast showSplitCenterWithText:@"添加失敗"];
+                }
+                //
+                
+            } failBlock:^(NSString *failmsg) {
+                
+                [XHToast showSplitCenterWithText:@"error"];
+                [self.mtbutton setTitle:@"開始配置" forState:UIControlStateNormal];
+                
+            } endBlock:^(NSDictionary *deviceDic) {
+                isconnecting=false;
+                [self connectStopInterface];
+                [self savePassword];
+            }];
+            //[self.btn_start setTitle:@"正在配置中..." forState:UIControlStateNormal];
         }
+        else{
+            [smtlk stopWithBlock:^(NSString *stopMsg, BOOL isOk) {//停止
+                if(isOk)//停止成功
+                {
+                    [self.mtbutton setTitle:@"開始配置" forState:UIControlStateNormal];
+                    isconnecting=false;
+                    [self connectStopInterface];
+                    [XHToast showSplitCenterWithText:stopMsg];
+                }
+                else//停止失敗
+                {
+                    [XHToast showSplitCenterWithText:@"error"];
+                    [self.mtbutton setTitle:@"開始配置" forState:UIControlStateNormal];
+                }
+            }];
+        }
+
+        ////////////////////
+        
         
     }];
+    
     self.mtbutton.layer.masksToBounds=YES;
     self.mtbutton.layer.cornerRadius=5;
     [self.view addSubview:self.mtbutton];
@@ -91,7 +208,11 @@
     [self.view addSubview:self.tableView];
 }
 -(void)switchClick{
-
+    if(self.isOneDeviceSwitch.on){
+     smtlk.isConfigOneDevice = true;
+    }else{
+        smtlk.isConfigOneDevice = false;
+    }
 }
 /*
  *tableview
