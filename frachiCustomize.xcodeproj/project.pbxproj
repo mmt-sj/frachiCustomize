@@ -637,6 +637,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/frachiCustomize",
 					"$(inherited)",
+					"$(PROJECT_DIR)/frachiCustomize/frachiCustomize",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
@@ -666,6 +667,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/frachiCustomize",
 					"$(inherited)",
+					"$(PROJECT_DIR)/frachiCustomize/frachiCustomize",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = sj.mmt.frachiCustomize;
